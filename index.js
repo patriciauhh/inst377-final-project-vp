@@ -12,7 +12,7 @@ app.use(express.json());
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 app.get('/', (req, res) => {
-  res.sendFile('public/INST377-Week12-Customers.html', { root: __dirname });
+  res.sendFile('public/homepage.html', { root: __dirname });
 });
 
 // POST /api/save-playlist
