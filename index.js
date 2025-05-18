@@ -9,13 +9,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Connect to Supabase
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
-app.get('/', (req, res) => {
-  res.sendFile('public/homepage.html', { root: __dirname });
-});
-
-// POST /api/save-playlist
+// 
 app.post('/save-playlist', async (req, res) => {
   const { genre, playlist } = req.body;
 
@@ -31,7 +28,6 @@ app.post('/save-playlist', async (req, res) => {
   res.status(201).json({ message: 'Playlist saved successfully' });
 });
 
-// GET /api/playlists
 app.get('/playlists', async (req, res) => {
   const { data, error } = await supabase
     .from('saved_playlists')
@@ -42,6 +38,7 @@ app.get('/playlists', async (req, res) => {
   res.json(data);
 });
 
-// Expose the app for Vercel
+
+// Export the app for Vercel
 module.exports = app;
 module.exports.handler = serverless(app);
