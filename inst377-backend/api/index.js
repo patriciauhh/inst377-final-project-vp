@@ -12,7 +12,7 @@ app.use(express.json());
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 // POST /api/save-playlist
-app.post('/api/save-playlist', async (req, res) => {
+app.post('/save-playlist', async (req, res) => {
   const { genre, playlist } = req.body;
 
   if (!genre || !Array.isArray(playlist)) {
@@ -28,7 +28,7 @@ app.post('/api/save-playlist', async (req, res) => {
 });
 
 // GET /api/playlists
-app.get('/api/playlists', async (req, res) => {
+app.get('/playlists', async (req, res) => {
   const { data, error } = await supabase
     .from('saved_playlists')
     .select('*')
