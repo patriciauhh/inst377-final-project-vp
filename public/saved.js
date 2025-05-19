@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // load saved playlists
-  fetch('https://inst377-final-project-vp.vercel.app/api/playlists')
+  fetch('https://inst377-final-project-vp.vercel.app/playlists')
     .then(res => res.json())
     .then(data => {
       const container = document.getElementById("saved-playlists");

@@ -96,13 +96,13 @@ document.getElementById("savePlaylistBtn").addEventListener("click", () => {
     artist: track.artist.name
   }));
 
-  fetch('https://inst377-final-project-vp.vercel.app/api/save-playlists', {
+  fetch('https://inst377-final-project-vp.vercel.app/save-playlist', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ genre, playlist: cleanedPlaylist })
   })
-    .then(res => res.json())
-    .then(data => {
+    .then((res) => res.json())
+    .then((data) => {
       alert(data.message || "Playlist saved successfully!");
     })
     .catch(err => {
