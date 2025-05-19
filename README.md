@@ -23,12 +23,41 @@ The manual is intended for future developers who will take over this project. It
    
 ```git clone https://github.com/your-username/inst377-final-project-vp.git cd inst377-final-project-vp ```
 
+   create a .env file in the root with the following (use ur own): 
+``` SUPABASE_URL=your_supabase_project_url ```
+ ```SUPABASE_KEY=your_supabase_anon_key ```
+
+2. How to run your application on a server
+
+This project can be run on Live Server or Vercel. If using VS Code, right-click any HTML file and press Live Server. If using Vercel, import the repository to Vercel. Add Supabase keys to the environment and deploy in the dashboard. Make sure you are pushing new changes before redeploying. 
+
+3. How to run any tests you have written for your software
+
+There are currently no tests implemented in this project. Future developers are encouraged!
+
+4. The API for your server application - all GET, POST, PATCH, etc endpoints, and what they each do
 
 
+```POST /save-playlist```
+  Saves generated playlist to the Supabase table. 
 
-  
-1. How to run your application on a server
-2. How to run any tests you have written for your software
-3. The API for your server application - all GET, POST, PATCH, etc endpoints, and what they each do
+```GET /playlist```
+  Returns all the saved playlists from Supabase. 
+
 4. A clear set of expectations around known bugs and a road-map for future development.
+
+Known bugs: 
+  1. The playlist saves fail if the Supabase credentials are incorrect or the Vercel link is incorrect.
+  2. Voice commands may not work on all pages.
+  3. API calls if backend URL are misconfigured.
+
+For future development: 
+  1. Implement user accounts to associate playlists with users.
+  2. Improve error handling for Supabase and fetch requests.
+  3. Integrate Spotify API.
+
+
+
+
+
 
