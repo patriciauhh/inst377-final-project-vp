@@ -15,6 +15,20 @@ Our system would help users find new music, usually people get bored of their pl
 Developer Manual 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+The manual is intended for future developers who will take over this project. It will provide all necessary information for setting up, running, and contributing to the project. 
 
 
+1. How to install your application and all dependencies:
+   clone the repo 
+'''git clone https://github.com/your-username/inst377-final-project-vp.git
+cd inst377-final-project-vp
+
+
+
+
+  
+1. How to run your application on a server
+2. How to run any tests you have written for your software
+3. The API for your server application - all GET, POST, PATCH, etc endpoints, and what they each do
+4. A clear set of expectations around known bugs and a road-map for future development.
 
