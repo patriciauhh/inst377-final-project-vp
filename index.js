@@ -13,6 +13,14 @@ app.use(express.json());
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
 // 
+
+app.get("/", (req,res)=> {
+  res.sendFile("public/index.html", {
+    root: __dirname 
+  })
+})
+
+
 app.post('/save-playlist', async (req, res) => {
   const { genre, playlist } = req.body;
 

@@ -96,7 +96,7 @@ document.getElementById("savePlaylistBtn").addEventListener("click", () => {
     artist: track.artist.name
   }));
 
-  fetch('http://localhost:3000/api/save-playlist', {
+  fetch('https://inst377-final-project-vp.vercel.app/api/save-playlists', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ genre, playlist: cleanedPlaylist })
