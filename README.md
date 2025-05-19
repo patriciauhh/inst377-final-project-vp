@@ -8,7 +8,7 @@ Some of the stakeholders would be students ranging from middle to college level,
 
 Our system would help users find new music, usually people get bored of their playlist because it gets repetitive. Broadening the algorithm also allows aspiring artists to get popularity since the system would be adding try to create personalized playlists for users to discover new artists. 
 
-
+VERCEL LINK: https://inst377-final-project-vp.vercel.app/homepage.html
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
