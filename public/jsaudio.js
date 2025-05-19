@@ -7,12 +7,19 @@ if (annyang){
         'Navigate to Home Page' : toHomePage, 
         'Navigate to About'  : toAbout,
         'Show me top ten songs' : Songs,
-        'Show me top ten artist' : Artist
-
+        'Show me top ten artist' : Artist,
+        'Generate *genre playlist' : genrePlaylist
     }
 
 }
 
+function genrePlaylist(genre){
+    const searchbar = document.getElementById("user-input");
+    searchbar.value = genre
+    console.log(genre)
+    generate()
+
+}
 
 function toPlaylist(){
     window.location.href = "playlist.html"
