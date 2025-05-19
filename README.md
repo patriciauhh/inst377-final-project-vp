@@ -23,6 +23,9 @@ The manual is intended for future developers who will take over this project. It
    
 ```git clone https://github.com/your-username/inst377-final-project-vp.git cd inst377-final-project-vp ```
 
+  make sure you run this in terminal: 
+```npm install```
+
    create a .env file in the root with the following (use ur own): 
 ``` SUPABASE_URL=your_supabase_project_url ```
  ```SUPABASE_KEY=your_supabase_anon_key ```
@@ -30,6 +33,7 @@ The manual is intended for future developers who will take over this project. It
 2. How to run your application on a server
 
 This project can be run on Live Server or Vercel. If using VS Code, right-click any HTML file and press Live Server. If using Vercel, import the repository to Vercel. Add Supabase keys to the environment and deploy in the dashboard. Make sure you are pushing new changes before redeploying. 
+
 
 3. How to run any tests you have written for your software
 
