@@ -1,5 +1,5 @@
 function trendapi(){
-    fetch('http://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=04082a95d3d42a143f5505cb89aebba0&format=json')
+    fetch('https://ws.audioscrobbler.com/2.0/?method=chart.gettoptracks&api_key=04082a95d3d42a143f5505cb89aebba0&format=json')
     .then((result)=> result.json())
     .then((resultjson) => {
         console.log(resultjson)
@@ -85,7 +85,7 @@ document.addEventListener("click", () => {
   
 
 function trendartist(){
-    fetch('http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=04082a95d3d42a143f5505cb89aebba0&format=json')
+    fetch('https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=04082a95d3d42a143f5505cb89aebba0&format=json')
     .then((result)=>result.json())
     .then((resultjson)=>{
         console.log(resultjson)

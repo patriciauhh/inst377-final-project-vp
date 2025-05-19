@@ -145,18 +145,6 @@ function Artist(){
     })
 }
 
-// cursor animation
-const cursor = document.getElementById("custom-cursor");
-
-document.addEventListener("mousemove", (e) => {
-  anime({
-    targets: cursor,
-    left: e.clientX - 10, // center cursor
-    top: e.clientY - 10,
-    duration: 300,
-    easing: "easeOutExpo"
-  });
-});
 
 document.addEventListener("click", () => {
     anime({
