@@ -1,2 +1,4 @@
 # 377_Final_Project
-#Patricia Alday and Vanessa Huang
+Patricia Alday and Vanessa Huang
+
+Music platforms such as Spotify aren’t able to create personalized playlists that their users enjoy. Majority of its users create their own playlists, this makes it harder for them to find new music and help smaller   artists build their career. Some of Spotify's daily mixes are repetitive and biased when it comes to lesser-known artists. Users heavily rely on different platforms like TikTok to find new music, artists also rely on   this platform to get their music noticed. We want to create a platform that avoids these issues so that there is a better user experience for customers and artists. 
