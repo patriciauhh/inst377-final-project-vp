@@ -19,6 +19,8 @@ app.get("/", (req,res)=> {
   })
 })
 
+app.use(express.static(__dirname + "/public"));
+
 
 app.post('/save-playlist', async (req, res) => {
   const { genre, playlist } = req.body;
