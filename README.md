@@ -19,7 +19,8 @@ The manual is intended for future developers who will take over this project. It
 
 
 1. How to install your application and all dependencies:
-   clone the repo 
+   clone the repo
+   
 ```git clone https://github.com/your-username/inst377-final-project-vp.git cd inst377-final-project-vp ```
 
 
